@@ -7,8 +7,14 @@ debugger with WDB.
 Usage
 ------------
 
-Insire your ``config/app_cfg.py`` enable the WDB debugger::
+Inside your ``config/app_cfg.py`` enable the WDB debugger::
 
     from tgext.wdb import enable_wdb
     
     enable_wdb(base_config)
+
+Make sure you started the WDB server before using it::
+
+    $ wdb.server.py
+
+
